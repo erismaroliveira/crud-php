@@ -22,7 +22,7 @@
             $advocacia = $_POST["advocacia_id_advocacia"];
             $atendente = $_POST["nome_atendente"];
 
-            $sql = "UPDATE atendente SET advocacia_id_advocacia{$advocacia}, '{$atendente}' WHERE id_atendente=".$_REQUEST["id_atendente"];
+            $sql = "UPDATE atendente SET advocacia_id_advocacia={$advocacia}, nome_atendente='{$atendente}' WHERE id_atendente=".$_REQUEST["id_atendente"];
             $res = $conn->query($sql) or die($conn->error);
 
 			if($res==true){

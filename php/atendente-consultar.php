@@ -18,7 +18,9 @@
             print "<td>".$row->id_atendente."</td>";
             print "<td>".$row->nome_advocacia."</td>";
             print "<td>".$row->nome_atendente."</td>";
-            print "<td><button class='btn btn-success' onclick=\"location.href='?page=atendente-editar&id_atendente=".$row->id_atendente."';\">Editar</button><button class='btn btn-danger' onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=atendente-salvar&acao=excluir&id_atendente=".$row->id_atendente."';}else{false;}\">Excluir</button>
+            print "<td><button class='btn btn-success' onclick=\"location.href='?page=atendente-editar&id_atendente=".$row->id_atendente."';\">Editar</button>
+            
+            <button class='btn btn-danger' onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=atendente-salvar&acao=excluir&id_atendente=".$row->id_atendente."';}else{false;}\">Excluir</button>
                   </td>";
             print "</tr>";
         }

@@ -20,7 +20,9 @@
 			print "<td>".$row->nome_advogado."</td>";
 			print "<td>".$row->oab_advogado."</td>";
 			print "<td>".$row->especialidade_advogado."</td>";
-			print "<td><button class='btn btn-success' onclick=\"location.href='?page=advogado-editar&id_advogado=".$row->id_advogado."';\">Editar</button><button class='btn btn-danger' onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=advogado-salvar&acao=excluir&id_advogado=".$row->id_advogado."';}else{false;}\">Excluir</button></td>";
+      print "<td><button class='btn btn-success' onclick=\"location.href='?page=advogado-editar&id_advogado=".$row->id_advogado."';\">Editar</button>
+      
+      <button class='btn btn-danger' onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=advogado-salvar&acao=excluir&id_advogado=".$row->id_advogado."';}else{false;}\">Excluir</button></td>";
 			print "</tr>";
 		}
 		print "</table>";
