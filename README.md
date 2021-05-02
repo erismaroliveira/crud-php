@@ -5,7 +5,7 @@
 </h1>
 
 ## Description
-  - CRUD em Linguagem PHP.
+  - CRUD in PHP Language.
 
 ## Knowledges Applied 🚀
  - Php
